@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <div id="app">
+      <article class="nft-card">
+        <a href="#" rel="noopener noreferrer" class="nft-display-image">
+          <img class="view-icon" src="images/icon-view.svg" alt="View icon" />
+        </a>
+
+        <section class="nft-card-content">
+          <a href="#" rel="noopener noreferrer" class="nft-name nft-card-link">Equilibrium #1234</a>
+
+          <p class="nft-caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <div class="nft-details">
+            <div class="nft-details-item nft-value">
+              <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                />
+              </svg>
+
+              <span>0.041 ETH</span>
+            </div>
+
+            <div class="nft-details-item nft-timestamp">
+              <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                />
+              </svg>
+
+              <span>3 days left</span>
+            </div>
+          </div>
+
+          <div class="nft-creator">
+            <img src="./images/image-avatar.png" alt="NFT Creator" class="nft-creator-image">
+
+            <h2 class="nft-creator-name">
+              Creation of <a href="#" class="nft-card-link" rel="noopener noreferrer">Jules Wyvern</a>
+            </h2>
+          </div>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

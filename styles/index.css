@@ -1,0 +1,17 @@
+@import url("./reset.min.css");
+@import url("./variables.css");
+@import url("./nft-card.css");
+
+html {
+  background-color: var(--very-dark-blue-1);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 360px;
+  padding: 0 22px;
+}

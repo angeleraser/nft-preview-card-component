@@ -1,0 +1,125 @@
+.nft-card {
+  width: 100%;
+  max-width: 352px;
+  padding: 24px;
+  background-color: var(--very-dark-blue-2);
+  font-size: var(--base-fs);
+  font-family: var(--font-outfit);
+}
+
+.nft-card a.nft-card-link {
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nft-card a:hover {
+  color: var(--cyan);
+}
+
+.nft-card {
+  border-radius: 16px;
+}
+
+.nft-display-image {
+  align-items: center;
+  background-image: url("../images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 294px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.nft-display-image .view-icon {
+  display: none;
+}
+
+.nft-display-image:hover .view-icon {
+  z-index: 1;
+  display: inline-block;
+}
+
+.nft-display-image:hover::after {
+  background-color: var(--cyan);
+  border-radius: 8px;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nft-name {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 24px 0;
+}
+
+.nft-caption {
+  color: var(--soft-blue);
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+.nft-details {
+  justify-content: space-between;
+  font-size: 0.8em;
+  margin: 28px 0;
+}
+
+.nft-details-item,
+.nft-creator,
+.nft-details {
+  display: flex;
+  align-items: center;
+}
+
+.nft-details-item svg {
+  margin-right: 6px;
+  fill: currentColor;
+}
+
+.nft-value {
+  color: var(--cyan);
+}
+
+.nft-timestamp {
+  color: var(--soft-blue);
+}
+
+.nft-creator {
+  position: relative;
+  padding-top: 16px;
+}
+
+.nft-creator::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--soft-blue);
+  top: 0;
+  opacity: .3;
+}
+
+.nft-creator-image {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.nft-creator-name {
+  font-size: 0.8em;
+  color: var(--soft-blue);
+}
